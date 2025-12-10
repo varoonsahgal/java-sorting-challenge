@@ -14,6 +14,10 @@ public class Main {
         myFamily.add( new Person("Ezra", "Aiden", 17) );
 
         // SORT using the natural ordering defined in compareTo()
+        // collections is able to sort this list ONLY because
+        // we are fulfilling a contract wherein we implent the Comparable<Person> interface
+        // and implement compareTo!
+        // Sort will invoke YOUR compareTo implementation and then sort using whatever algorithm...
         Collections.sort(myFamily);
 
         // DISPLAY RESULTS
